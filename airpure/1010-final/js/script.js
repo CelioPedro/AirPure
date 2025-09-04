@@ -1,3 +1,6 @@
+// Cart state management
+let cartIsEmpty = true; // This should be dynamically set based on actual cart state
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -84,13 +87,13 @@ document.querySelectorAll('.product-button').forEach(button => {
     this.textContent = 'Adicionado!';
     this.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
 
+    // Update cart state when product is added
+    cartIsEmpty = false;
+
     setTimeout(() => {
       this.textContent = 'Comprar Agora';
       this.style.background = '';
     }, 2000);
-
-    // Show purchase confirmation
-    alert(`${productName} foi adicionado ao carrinho!\nPreço: ${productPrice}`);
   });
 });
 
@@ -262,3 +265,43 @@ document.querySelectorAll('.faq-question').forEach(question => {
     });
   });
 });
+
+const cartIcon = document.querySelector('.cart-icon');
+
+// Create tooltip element
+const cartTooltip = document.createElement('div');
+cartTooltip.classList.add('cart-tooltip');
+cartTooltip.innerHTML = `
+  <p class="message-title">Carrinho Vazio</p>
+  <p class="message-text">Seu carrinho está vazio. Explore nossos produtos e adicione alguns itens!</p>
+  <p class="action-hint">Clique nos produtos para adicioná-los ao carrinho.</p>
+`;
+document.body.appendChild(cartTooltip);
+
+if (cartIcon) {
+  cartIcon.addEventListener('click', (event) => {
+    if (cartIsEmpty) {
+      // Position tooltip near the cart icon
+      const rect = cartIcon.getBoundingClientRect();
+      cartTooltip.style.top = `${rect.bottom + window.scrollY + 8}px`;
+      cartTooltip.style.left = `${rect.right + window.scrollX - cartTooltip.offsetWidth}px`;
+
+      // Show tooltip
+      cartTooltip.classList.add('show');
+
+      // Hide tooltip after 5 seconds
+      setTimeout(() => {
+        cartTooltip.classList.remove('show');
+      }, 5000);
+    } else {
+      // Logic for non-empty cart click can be added here
+    }
+  });
+
+  // Optional: Hide tooltip if user clicks outside
+  document.addEventListener('click', (e) => {
+    if (!cartIcon.contains(e.target) && !cartTooltip.contains(e.target)) {
+      cartTooltip.classList.remove('show');
+    }
+  });
+}

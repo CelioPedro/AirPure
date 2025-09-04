@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/hero.css" rel="stylesheet">
+  <link href="./css/products.css" rel="stylesheet">
   <link href="./css/faq.css" rel="stylesheet">
 </head>
 
@@ -96,12 +98,19 @@
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#footer">Contato</a></li>
       </ul>
-      <button class="profile-icon" aria-label="Perfil">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
-          <path d="M12 14C8.13401 14 5 17.134 5 21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21C3 16.0294 7.02944 12 12 12C16.9706 12 21 16.0294 21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 17.134 15.866 14 12 14Z" fill="white"/>
-        </svg>
-      </button>
+      <div class="header-icons">
+        <button class="cart-icon" aria-label="Carrinho">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.3999 1.99268C1.84762 1.99268 1.3999 2.44039 1.3999 2.99268C1.3999 3.54496 1.84762 3.99268 2.3999 3.99268V1.99268ZM4.69244 2.99268L5.65767 2.73126C5.53961 2.29536 5.14405 1.99268 4.69244 1.99268V2.99268ZM8.41781 16.7479L7.45259 17.0093C7.58285 17.4903 8.04737 17.802 8.54185 17.7402L8.41781 16.7479ZM19.8805 15.3151L20.0045 16.3073C20.4292 16.2543 20.773 15.9368 20.8598 15.5177L19.8805 15.3151ZM21.5999 7.00462L22.5792 7.20722C22.6401 6.91271 22.5652 6.60641 22.3753 6.37319C22.1854 6.13998 21.9007 6.00462 21.5999 6.00462V7.00462ZM5.77901 7.00462L4.81378 7.26603L5.77901 7.00462ZM2.3999 3.99268H4.69244V1.99268H2.3999V3.99268ZM8.54185 17.7402L20.0045 16.3073L19.7565 14.3228L8.29378 15.7556L8.54185 17.7402ZM20.8598 15.5177L22.5792 7.20722L20.6206 6.80201L18.9012 15.1125L20.8598 15.5177ZM3.72721 3.25409L4.81378 7.26603L6.74423 6.7432L5.65767 2.73126L3.72721 3.25409ZM4.81378 7.26603L7.45259 17.0093L9.38304 16.4865L6.74423 6.7432L4.81378 7.26603ZM21.5999 6.00462H5.77901V8.00462H21.5999V6.00462ZM10.9999 20.4999C10.9999 20.7761 10.776 20.9999 10.4999 20.9999V22.9999C11.8806 22.9999 12.9999 21.8807 12.9999 20.4999H10.9999ZM10.4999 20.9999C10.2238 20.9999 9.9999 20.7761 9.9999 20.4999H7.9999C7.9999 21.8807 9.11919 22.9999 10.4999 22.9999V20.9999ZM9.9999 20.4999C9.9999 20.2238 10.2238 19.9999 10.4999 19.9999V17.9999C9.11919 17.9999 7.9999 19.1192 7.9999 20.4999H9.9999ZM10.4999 19.9999C10.776 19.9999 10.9999 20.2238 10.9999 20.4999H12.9999C12.9999 19.1192 11.8806 17.9999 10.4999 17.9999V19.9999ZM18.9999 20.4999C18.9999 20.7761 18.776 20.9999 18.4999 20.9999V22.9999C19.8806 22.9999 20.9999 21.8807 20.9999 20.4999H18.9999ZM18.4999 20.9999C18.2238 20.9999 17.9999 20.7761 17.9999 20.4999H15.9999C15.9999 21.8807 17.1192 22.9999 18.4999 22.9999V20.9999ZM17.9999 20.4999C17.9999 20.2238 18.2238 19.9999 18.4999 19.9999V17.9999C17.1192 17.9999 15.9999 19.1192 15.9999 20.4999H17.9999ZM18.4999 19.9999C18.776 19.9999 18.9999 20.2238 18.9999 20.4999H20.9999C20.9999 19.1192 19.8806 17.9999 18.4999 17.9999V19.9999Z" fill="white"/>
+          </svg>
+        </button>
+        <button class="profile-icon" aria-label="Perfil">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
+            <path d="M12 14C8.13401 14 5 17.134 5 21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21C3 16.0294 7.02944 12 12 12C16.9706 12 21 16.0294 21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 17.134 15.866 14 12 14Z" fill="white"/>
+          </svg>
+        </button>
+      </div>
       <div class="hamburger-menu">
         <button class="hamburger-toggle" aria-label="Abrir menu">
           <span class="bar bar1"></span>
@@ -152,7 +161,7 @@
       </div>
 
       <div class="products-grid" id="productsGrid">
-        <div class="product-card" data-category="premium">
+        <div class="product-card" data-category="premium" onclick="window.location.href='./products/max.html'">
           <div class="product-image">
             <img src="./images/produtos/Max.jpg" alt="AirPure Max">
           </div>
@@ -160,11 +169,11 @@
             <h3 class="product-name">AirPure Max</h3>
             <p class="product-description">Purificador premium com filtro HEPA H13 e controle inteligente via app.</p>
             <div class="product-price">R$ 1.299</div>
-            <button class="product-button">Comprar Agora</button>
+            <a href="./products/max.html" class="hero-cta-button product-button">Comprar Agora</a>
           </div>
         </div>
 
-        <div class="product-card" data-category="silent">
+        <div class="product-card" data-category="silent" onclick="window.location.href='./products/silent.html'">
           <div class="product-image">
             <img src="./images/produtos/Silent.jpg" alt="AirPure Silent">
           </div>
@@ -172,11 +181,11 @@
             <h3 class="product-name">AirPure Silent</h3>
             <p class="product-description">Operação ultra silenciosa, ideal para quartos e escritórios.</p>
             <div class="product-price">R$ 899</div>
-            <button class="product-button">Comprar Agora</button>
+            <a href="./products/silent.html" class="hero-cta-button product-button">Comprar Agora</a>
           </div>
         </div>
 
-        <div class="product-card" data-category="compact">
+        <div class="product-card" data-category="compact" onclick="window.location.href='./products/compact.html'">
           <div class="product-image">
             <img src="./images/produtos/Compact.jpg" alt="AirPure Compact">
           </div>
@@ -184,11 +193,11 @@
             <h3 class="product-name">AirPure Compact</h3>
             <p class="product-description">Design compacto e portátil, perfeito para espaços menores.</p>
             <div class="product-price">R$ 599</div>
-            <button class="product-button">Comprar Agora</button>
+            <a href="./products/compact.html" class="hero-cta-button product-button">Comprar Agora</a>
           </div>
         </div>
 
-        <div class="product-card" data-category="premium">
+        <div class="product-card" data-category="premium" onclick="window.location.href='./products/wiiser.html'">
           <div class="product-image">
             <img src="./images/produtos/Wiiser.jpg" alt="AirPure Wiiser">
           </div>
@@ -196,11 +205,11 @@
             <h3 class="product-name">AirPure Wiiser</h3>
             <p class="product-description">Modelo top de linha com purificação UV e ionização.</p>
             <div class="product-price">R$ 1.599</div>
-            <button class="product-button">Comprar Agora</button>
+            <a href="./products/wiiser.html" class="hero-cta-button product-button">Comprar Agora</a>
           </div>
         </div>
 
-        <div class="product-card" data-category="silent compact">
+        <div class="product-card" data-category="silent compact" onclick="window.location.href='./products/mini.html'">
           <div class="product-image">
             <img src="./images/produtos/Mini.jpg" alt="AirPure Mini">
           </div>
@@ -208,11 +217,11 @@
             <h3 class="product-name">AirPure Mini</h3>
             <p class="product-description">Compacto e silencioso, ideal para mesa de trabalho.</p>
             <div class="product-price">R$ 399</div>
-            <button class="product-button">Comprar Agora</button>
+            <a href="./products/mini.html" class="hero-cta-button product-button">Comprar Agora</a>
           </div>
         </div>
 
-        <div class="product-card" data-category="premium silent">
+        <div class="product-card" data-category="premium silent" onclick="window.location.href='./products/zen.html'">
           <div class="product-image">
             <img src="./images/produtos/Zen.jpg" alt="AirPure Zen">
           </div>
@@ -220,7 +229,7 @@
             <h3 class="product-name">AirPure Zen</h3>
             <p class="product-description">Premium silencioso com aromaterapia integrada.</p>
             <div class="product-price">R$ 1.199</div>
-            <button class="product-button">Comprar Agora</button>
+            <a href="./products/zen.html" class="hero-cta-button product-button">Comprar Agora</a>
           </div>
         </div>
       </div>

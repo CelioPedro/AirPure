@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirPure Wiiser - Purificador Top de Linha</title>
+  <meta name="description" content="Modelo top de linha com purificação UV e ionização.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="product-page.css" rel="stylesheet">
+</head>
+
+<body id="product">
+  <header class="header">
+    <nav class="nav-container">
+      <div class="logo-container">
+        <a href="../index.html" class="logo">
+          <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" class="airpure-logo">
+            <style>
+              .pulse-glow {
+                animation: pulseGlow 2s ease-in-out infinite;
+              }
+              @keyframes pulseGlow {
+                0%, 100% { opacity: 0.6; transform: scale(1); }
+                50% { opacity: 1; transform: scale(1.1); }
+              }
+
+              .traveling-bubble {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+              }
+
+              .airpure-logo:hover .pulse-glow {
+                opacity: 0;
+                animation: none;
+              }
+
+              .airpure-logo:hover .traveling-bubble {
+                opacity: 1;
+                animation: travelAndFloat 12s ease-in-out infinite;
+              }
+
+              @keyframes travelAndFloat {
+                0% { offset-distance: 0%; transform: translateY(0px); }
+                60% { offset-distance: 100%; transform: translateY(0px); }
+                70% { offset-distance: 100%; transform: translateY(-1px); }
+                75% { offset-distance: 100%; transform: translateY(0px); }
+                80% { offset-distance: 100%; transform: translateY(-2px); }
+                83% { offset-distance: 100%; transform: translateY(0px); }
+                86% { offset-distance: 100%; transform: translateY(-1px); }
+                89% { offset-distance: 100%; transform: translateY(0px); }
+                92% { offset-distance: 100%; transform: translateY(-3px); }
+                95% { offset-distance: 100%; transform: translateY(0px); }
+                98% { offset-distance: 100%; transform: translateY(-1px); }
+                100% { offset-distance: 100%; transform: translateY(0px); }
+              }
+
+              .travel-path {
+                offset-path: path('M 37,12 C 50,8 80,6 110,8 C 135,10 145,12 148,20 C 150,32 148,40 145,47 C 140,50 120,50 90,50 C 60,50 30,50 15,47 C 8,44 6,35 8,25 C 10,18 18,14 28,12 C 32,11 35,11 37,12');
+              }
+            </style>
+
+            <defs>
+              <path id="travel-route" d="M 37,12 Q 70,2 100,2 Q 140,2 150,15 Q 155,30 150,45 Q 140,52 100,52 Q 60,52 20,52 Q 5,52 5,30 Q 5,15 20,8 Q 30,10 37,12"/>
+            </defs>
+
+            <text x="10" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="currentColor">A</text>
+            <rect x="35" y="20" width="2" height="20" fill="currentColor"/>
+            <text x="42" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="300" fill="currentColor">r</text>
+
+            <circle cx="37" cy="12" r="4" fill="#60a5fa" opacity="0.3" class="pulse-glow"/>
+            <circle cx="37" cy="12" r="2" fill="#3b82f6" opacity="0.8" class="pulse-glow" style="animation-delay: 0.3s"/>
+
+            <circle r="4" fill="#60a5fa" opacity="0.3" class="traveling-bubble travel-path"/>
+            <circle r="2" fill="#3b82f6" opacity="0.8" class="traveling-bubble travel-path"/>
+
+            <text x="60" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="currentColor">P</text>
+            <text x="80" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="300" fill="currentColor">u</text>
+            <text x="100" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="300" fill="currentColor">r</text>
+            <text x="115" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="300" fill="currentColor">e</text>
+          </svg>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#products">Produtos</a></li>
+        <li><a href="../index.html#technology">Tecnologia</a></li>
+        <li><a href="../index.html#benefits">Sobre</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+        <li><a href="../index.html#footer">Contato</a></li>
+      </ul>
+      <button class="profile-icon" aria-label="Perfil">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
+          <path d="M12 14C8.13401 14 5 17.134 5 21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21C3 16.0294 7.02944 12 12 12C16.9706 12 21 16.0294 21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 17.134 15.866 14 12 14Z" fill="white"/>
+        </svg>
+      </button>
+      <div class="hamburger-menu">
+        <button class="hamburger-toggle" aria-label="Abrir menu">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+        </button>
+        <nav class="hamburger-nav">
+          <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#products">Produtos</a></li>
+            <li><a href="../index.html#technology">Tecnologia</a></li>
+            <li><a href="../index.html#benefits">Sobre</a></li>
+            <li><a href="../index.html#faq">FAQ</a></li>
+            <li><a href="../index.html#footer">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Product Info Section -->
+    <section class="product-info-section">
+      <div class="product-info-left">
+        <h2 class="product-info-title">AirPure Wiiser</h2>
+        <p class="product-info-description">Modelo top de linha com purificação UV e ionização. Incorpora tecnologias avançadas como luz UV-C para eliminação de bactérias e vírus, além de ionização para neutralização de odores e partículas.</p>
+        <p class="product-info-price">R$ 1.599</p>
+        <div class="product-info-buttons">
+          <a href="#" class="btn-primary">Comprar Agora</a>
+          <button class="btn-secondary">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+      <div class="product-info-right">
+        <div class="product-carousel">
+          <img src="../images/produtos/Wiiser.jpg" alt="AirPure Wiiser" class="carousel-image product-main-image">
+          <div class="carousel-image" style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #666;">Imagem 2 (Placeholder)</div>
+          <div class="carousel-image" style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #666;">Imagem 3 (Placeholder)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Section -->
+    <section class="product-detailed">
+      <div class="product-detailed-container">
+        <div class="product-description-expanded">
+          <h3>Descrição Detalhada</h3>
+          <p>O AirPure Wiiser representa o ápice da tecnologia de purificação de ar. Equipado com lâmpada UV-C que elimina 99,9% das bactérias e vírus, além de sistema de ionização que neutraliza odores e partículas carregadas.</p>
+          <p>Conta com filtro HEPA H14 de ultra eficiência, sensor inteligente de qualidade do ar e controle total via aplicativo móvel. O design premium combina elegância com máxima performance.</p>
+          <p>Ideal para ambientes que exigem o mais alto padrão de purificação, como salas de cirurgia, laboratórios ou residências com pessoas alérgicas ou com sistema imunológico comprometido.</p>
+        </div>
+        <div class="product-specs">
+          <h3>Especificações Técnicas</h3>
+          <ul class="specs-list">
+            <li><span class="spec-name">Cobertura</span><span class="spec-value">Até 100m²</span></li>
+            <li><span class="spec-name">Fluxo de Ar</span><span class="spec-value">600m³/h</span></li>
+            <li><span class="spec-name">Filtro</span><span class="spec-value">HEPA H14 + UV-C + Ionização</span></li>
+            <li><span class="spec-name">Nível de Ruído</span><span class="spec-value">22-48dB</span></li>
+            <li><span class="spec-name">Controle</span><span class="spec-value">App + Painel Touch + Sensor</span></li>
+            <li><span class="spec-name">Dimensões</span><span class="spec-value">32x32x65cm</span></li>
+            <li><span class="spec-name">Peso</span><span class="spec-value">9kg</span></li>
+            <li><span class="spec-name">Voltagem</span><span class="spec-value">110-220V</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="product-trust">
+      <div class="product-trust-container">
+        <h2>Por Que Confiar no AirPure Wiiser</h2>
+        <div class="trust-elements">
+          <div class="trust-element">
+            <div class="icon">🦠</div>
+            <h4>Eliminação UV-C</h4>
+            <p>Destrói 99,9% das bactérias e vírus com luz ultravioleta.</p>
+          </div>
+          <div class="trust-element">
+            <div class="icon">⭐</div>
+            <h4>Avaliações 4.9/5</h4>
+            <p>Mais de 200 avaliações positivas de clientes satisfeitos.</p>
+          </div>
+          <div class="trust-element">
+            <div class="icon">🛡️</div>
+            <h4>Garantia 2 Anos</h4>
+            <p>Garantia completa contra defeitos de fabricação.</p>
+          </div>
+          <div class="trust-element">
+            <div class="icon">💳</div>
+            <h4>Pagamento Seguro</h4>
+            <p>Aceitamos cartão, PIX, boleto e parcelamento em até 12x.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="product-related">
+      <h2>Produtos Relacionados</h2>
+      <div class="related-products-grid">
+        <a href="max.html" class="related-product-card">
+          <div class="related-product-image">
+            <img src="../images/produtos/Max.jpg" alt="AirPure Max">
+          </div>
+          <div class="related-product-info">
+            <h3 class="related-product-name">AirPure Max</h3>
+            <p class="related-product-price">R$ 1.299</p>
+          </div>
+        </a>
+        <a href="silent.html" class="related-product-card">
+          <div class="related-product-image">
+            <img src="../images/produtos/Silent.jpg" alt="AirPure Silent">
+          </div>
+          <div class="related-product-info">
+            <h3 class="related-product-name">AirPure Silent</h3>
+            <p class="related-product-price">R$ 899</p>
+          </div>
+        </a>
+        <a href="compact.html" class="related-product-card">
+          <div class="related-product-image">
+            <img src="../images/produtos/Compact.jpg" alt="AirPure Compact">
+          </div>
+          <div class="related-product-info">
+            <h3 class="related-product-name">AirPure Compact</h3>
+            <p class="related-product-price">R$ 599</p>
+          </div>
+        </a>
+        <a href="mini.html" class="related-product-card">
+          <div class="related-product-image">
+            <img src="../images/produtos/Mini.jpg" alt="AirPure Mini">
+          </div>
+          <div class="related-product-info">
+            <h3 class="related-product-name">AirPure Mini</h3>
+            <p class="related-product-price">R$ 399</p>
+          </div>
+        </a>
+        <a href="zen.html" class="related-product-card">
+          <div class="related-product-image">
+            <img src="../images/produtos/Zen.jpg" alt="AirPure Zen">
+          </div>
+          <div class="related-product-info">
+            <h3 class="related-product-name">AirPure Zen</h3>
+            <p class="related-product-price">R$ 1.199</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>AirPure</h3>
+        <p>Purificadores de ar modernos e sofisticados para um ambiente mais saudável e confortável.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Links Úteis</h3>
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#products">Produtos</a>
+        <a href="../index.html#technology">Tecnologia</a>
+        <a href="../index.html#benefits">Sobre Nós</a>
+        <a href="../index.html#faq">FAQ</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Suporte</h3>
+        <a href="#">Central de Ajuda</a>
+        <a href="#">Garantia</a>
+        <a href="#">Manutenção</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <a href="mailto:contato@airpure.com">contato@airpure.com</a>
+        <a href="tel:+5511999999999">(11) 99999-9999</a>
+        <a href="#">Redes Sociais</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 AirPure. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="product-page.js"></script>
+</body>
+</html>
