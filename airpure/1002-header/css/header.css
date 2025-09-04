@@ -7,7 +7,6 @@
   backdrop-filter: blur(25px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   z-index: 1000;
-  padding: 1.5rem 0;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: slideDown 0.8s ease-out;
 }

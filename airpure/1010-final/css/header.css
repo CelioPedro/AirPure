@@ -10,7 +10,7 @@ body.menu-open {
   width: 100%;
   background: transparent;
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 0.5rem 0 !important; /* Force reduced padding */
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: slideDown 0.8s ease-out;
 }
@@ -46,6 +46,15 @@ body.menu-open {
 .logo-container {
   display: flex;
   align-items: center;
+  /* Ensure logo aligns vertically with header texts */
+  margin-right: 1rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  align-items: center; /* Align nav items vertically center */
 }
 
 .logo {
@@ -56,6 +65,7 @@ body.menu-open {
   letter-spacing: 3px;
   position: relative;
   transition: all 0.3s ease;
+  margin-top: 5px; /* Move logo down by 5px */
 }
 
 
@@ -211,7 +221,7 @@ body.menu-open {
 
 /* Fix header height and remove unwanted points on desktop */
 .header {
-    padding: 1rem 0 !important;
+    /* Removed padding override to allow reduced padding */
     min-height: auto !important;
 }
 
