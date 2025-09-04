@@ -4,7 +4,7 @@ Bem-vindo(a) ao repositório! Este projeto contém a **versão completa e execut
 
 ## 📁 Estrutura do Projeto
 
-- `final1010/` → **Versão final executável**. Todos os arquivos necessários para rodar a aplicação estão nesta pasta.  
+- `1010-final` → **Versão final executável**. Todos os arquivos necessários para rodar a aplicação estão nesta pasta.  
 - Outras pastas → Arquivos de desenvolvimento, versões intermediárias ou testes.
 
 ---
