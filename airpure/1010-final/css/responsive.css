@@ -1,0 +1,56 @@
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-container {
+    padding: 0 2rem;
+  }
+
+  .hero {
+    padding: 10rem 2rem 6rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .purifier-showcase {
+    width: 180px;
+    height: 250px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .products, .technology, .benefits {
+    padding: 6rem 2rem;
+  }
+
+  .filter-buttons {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .products-grid, .tech-grid, .benefits-grid {
+    gap: 2rem;
+  }
+
+  .footer {
+    padding: 3rem 2rem 2rem;
+  }
+}

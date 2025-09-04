@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPure - Header</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #2c2c2c;
+            background-color: #ffffff;
+        }
+
+        main {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+
+        section {
+            padding: 4rem 3rem;
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .nav-container {
+                padding: 0 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">AirPure</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#technology">Tecnologia</a></li>
+                <li><a href="#benefits">Sobre</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ul>
+            <a href="#products" class="cta-button">Comprar Agora</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Purificadores de Ar Modernos e Sofisticados</h1>
+            <p>Transforme seu ambiente com tecnologia avançada de purificação.</p>
+            <a href="#products">Descobrir Produtos</a>
+        </section>
+
+        <section id="products">
+            <h2>Nossos Produtos</h2>
+            <p>Escolha o purificador perfeito para suas necessidades.</p>
+        </section>
+
+        <section id="technology">
+            <h2>Tecnologia Avançada</h2>
+            <p>Inovação em cada detalhe.</p>
+        </section>
+
+        <section id="benefits">
+            <h2>Por Que Escolher AirPure</h2>
+            <p>Benefícios que fazem a diferença.</p>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2024 AirPure. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

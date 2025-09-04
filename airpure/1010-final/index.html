@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirPure - Purificadores de Ar Modernos</title>
+  <meta name="description" content="Purificadores de ar modernos e sofisticados para um ambiente mais saudável e confortável.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/faq.css" rel="stylesheet">
+</head>
+
+<body id="home">
+  <header class="header">
+    <nav class="nav-container">
+      <div class="logo-container">
+        <a href="#" class="logo">
+          <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" class="airpure-logo">
+            <style>
+              .pulse-glow {
+                animation: pulseGlow 2s ease-in-out infinite;
+              }
+              @keyframes pulseGlow {
+                0%, 100% { opacity: 0.6; transform: scale(1); }
+                50% { opacity: 1; transform: scale(1.1); }
+              }
+
+              .traveling-bubble {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+              }
+
+              .airpure-logo:hover .pulse-glow {
+                opacity: 0;
+                animation: none;
+              }
+
+              .airpure-logo:hover .traveling-bubble {
+                opacity: 1;
+                animation: travelAndFloat 12s ease-in-out infinite;
+              }
+
+              @keyframes travelAndFloat {
+                0% { offset-distance: 0%; transform: translateY(0px); }
+                60% { offset-distance: 100%; transform: translateY(0px); }
+                70% { offset-distance: 100%; transform: translateY(-1px); }
+                75% { offset-distance: 100%; transform: translateY(0px); }
+                80% { offset-distance: 100%; transform: translateY(-2px); }
+                83% { offset-distance: 100%; transform: translateY(0px); }
+                86% { offset-distance: 100%; transform: translateY(-1px); }
+                89% { offset-distance: 100%; transform: translateY(0px); }
+                92% { offset-distance: 100%; transform: translateY(-3px); }
+                95% { offset-distance: 100%; transform: translateY(0px); }
+                98% { offset-distance: 100%; transform: translateY(-1px); }
+                100% { offset-distance: 100%; transform: translateY(0px); }
+              }
+
+              .travel-path {
+                offset-path: path('M 37,12 C 50,8 80,6 110,8 C 135,10 145,12 148,20 C 150,32 148,40 145,47 C 140,50 120,50 90,50 C 60,50 30,50 15,47 C 8,44 6,35 8,25 C 10,18 18,14 28,12 C 32,11 35,11 37,12');
+              }
+            </style>
+
+            <!-- Caminho invisível para a bolha viajar -->
+            <defs>
+              <path id="travel-route" d="M 37,12 Q 70,2 100,2 Q 140,2 150,15 Q 155,30 150,45 Q 140,52 100,52 Q 60,52 20,52 Q 5,52 5,30 Q 5,15 20,8 Q 30,10 37,12"/>
+            </defs>
+
+            <text x="10" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="currentColor">A</text>
+            <rect x="35" y="20" width="2" height="20" fill="currentColor"/>
+            <text x="42" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="300" fill="currentColor">r</text>
+
+            <!-- Círculos pulsantes no "i" (estado inicial) -->
+            <circle cx="37" cy="12" r="4" fill="#60a5fa" opacity="0.3" class="pulse-glow"/>
+            <circle cx="37" cy="12" r="2" fill="#3b82f6" opacity="0.8" class="pulse-glow" style="animation-delay: 0.3s"/>
+
+            <!-- Bolhas viajantes (aparecem no hover) -->
+            <circle r="4" fill="#60a5fa" opacity="0.3" class="traveling-bubble travel-path"/>
+            <circle r="2" fill="#3b82f6" opacity="0.8" class="traveling-bubble travel-path"/>
+
+            <text x="60" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="currentColor">P</text>
+            <text x="80" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="300" fill="currentColor">u</text>
+            <text x="100" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="300" fill="currentColor">r</text>
+            <text x="115" y="40" font-family="Inter, sans-serif" font-size="28" font-weight="300" fill="currentColor">e</text>
+          </svg>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Produtos</a></li>
+        <li><a href="#technology">Tecnologia</a></li>
+        <li><a href="#benefits">Sobre</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#footer">Contato</a></li>
+      </ul>
+      <button class="profile-icon" aria-label="Perfil">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
+          <path d="M12 14C8.13401 14 5 17.134 5 21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21C3 16.0294 7.02944 12 12 12C16.9706 12 21 16.0294 21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 17.134 15.866 14 12 14Z" fill="white"/>
+        </svg>
+      </button>
+      <div class="hamburger-menu">
+        <button class="hamburger-toggle" aria-label="Abrir menu">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+        </button>
+        <nav class="hamburger-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="#technology">Tecnologia</a></li>
+            <li><a href="#benefits">Sobre</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#footer">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Purificadores de Ar Modernos e Sofisticados</h1>
+          <p>Transforme seu ambiente com tecnologia avançada de purificação. Design minimalista, performance excepcional e qualidade do ar premium para sua casa ou escritório.</p>
+          <a href="#products" class="hero-cta-button">Descobrir Produtos</a>
+        </div>
+        <!-- Removed purifier-showcase as requested -->
+        <!-- <div class="hero-image">
+          <div class="purifier-showcase">
+            <div class="top-panel"></div>
+            <div class="control-button"></div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <h2 class="section-title">Nossos Produtos</h2>
+      <p class="section-subtitle">Escolha o purificador perfeito para suas necessidades. Cada modelo combina design elegante com tecnologia de ponta.</p>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="silent">Silencioso</button>
+        <button class="filter-btn" data-filter="premium">Premium</button>
+        <button class="filter-btn" data-filter="compact">Compacto</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <div class="product-card" data-category="premium">
+          <div class="product-image">
+            <img src="./images/produtos/Max.jpg" alt="AirPure Max">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">AirPure Max</h3>
+            <p class="product-description">Purificador premium com filtro HEPA H13 e controle inteligente via app.</p>
+            <div class="product-price">R$ 1.299</div>
+            <button class="product-button">Comprar Agora</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="silent">
+          <div class="product-image">
+            <img src="./images/produtos/Silent.jpg" alt="AirPure Silent">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">AirPure Silent</h3>
+            <p class="product-description">Operação ultra silenciosa, ideal para quartos e escritórios.</p>
+            <div class="product-price">R$ 899</div>
+            <button class="product-button">Comprar Agora</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="compact">
+          <div class="product-image">
+            <img src="./images/produtos/Compact.jpg" alt="AirPure Compact">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">AirPure Compact</h3>
+            <p class="product-description">Design compacto e portátil, perfeito para espaços menores.</p>
+            <div class="product-price">R$ 599</div>
+            <button class="product-button">Comprar Agora</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="premium">
+          <div class="product-image">
+            <img src="./images/produtos/Wiiser.jpg" alt="AirPure Wiiser">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">AirPure Wiiser</h3>
+            <p class="product-description">Modelo top de linha com purificação UV e ionização.</p>
+            <div class="product-price">R$ 1.599</div>
+            <button class="product-button">Comprar Agora</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="silent compact">
+          <div class="product-image">
+            <img src="./images/produtos/Mini.jpg" alt="AirPure Mini">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">AirPure Mini</h3>
+            <p class="product-description">Compacto e silencioso, ideal para mesa de trabalho.</p>
+            <div class="product-price">R$ 399</div>
+            <button class="product-button">Comprar Agora</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="premium silent">
+          <div class="product-image">
+            <img src="./images/produtos/Zen.jpg" alt="AirPure Zen">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">AirPure Zen</h3>
+            <p class="product-description">Premium silencioso com aromaterapia integrada.</p>
+            <div class="product-price">R$ 1.199</div>
+            <button class="product-button">Comprar Agora</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technology" class="technology">
+      <h2 class="section-title">Tecnologia Avançada</h2>
+      <p class="section-subtitle">Inovação em cada detalhe para garantir o ar mais puro e saudável.</p>
+
+      <div class="tech-grid">
+        <div class="tech-card fade-in">
+          <div class="tech-icon">🔬</div>
+          <h3 class="tech-title">Filtro HEPA</h3>
+          <p class="tech-description">Remove 99,97% das partículas de 0,3 mícrons, incluindo vírus, bactérias e alérgenos.</p>
+        </div>
+
+        <div class="tech-card fade-in">
+          <div class="tech-icon">🤫</div>
+          <h3 class="tech-title">Operação Silenciosa</h3>
+          <p class="tech-description">Tecnologia de redução de ruído para funcionamento praticamente inaudível.</p>
+        </div>
+
+        <div class="tech-card fade-in">
+          <div class="tech-icon">📱</div>
+          <h3 class="tech-title">Controle Digital</h3>
+          <p class="tech-description">Controle total via aplicativo móvel com monitoramento em tempo real.</p>
+        </div>
+
+        <div class="tech-card fade-in">
+          <div class="tech-icon">🌐</div>
+          <h3 class="tech-title">IoT Inteligente</h3>
+          <p class="tech-description">Sensores automáticos que ajustam a purificação conforme a qualidade do ar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+      <h2 class="section-title">Por Que Escolher AirPure</h2>
+      <p class="section-subtitle">Benefícios que fazem a diferença na sua qualidade de vida.</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">✨</div>
+          <h3 class="benefit-title">Design Premium</h3>
+          <p class="benefit-description">Estética minimalista que complementa qualquer ambiente moderno.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🏠</div>
+          <h3 class="benefit-title">Máximo Conforto</h3>
+          <p class="benefit-description">Operação silenciosa e eficiente para seu bem-estar diário.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">💨</div>
+          <h3 class="benefit-title">Ar Puro</h3>
+          <p class="benefit-description">Eliminação de 99,97% dos poluentes, alérgenos e partículas nocivas.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🌱</div>
+          <h3 class="benefit-title">Sustentabilidade</h3>
+          <p class="benefit-description">Tecnologia eco-friendly com baixo consumo energético.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="faq" class="faq">
+    <h2 class="section-title">Perguntas Frequentes</h2>
+    <p class="section-subtitle">Tire suas dúvidas sobre nossos purificadores de ar.</p>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          Como funciona um purificador de ar?
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="faq-answer">
+          Um purificador de ar utiliza filtros avançados, como HEPA, para capturar partículas poluentes, alérgenos e bactérias do ar ambiente, liberando ar limpo e saudável.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Qual a diferença entre os modelos?
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="faq-answer">
+          Nossos modelos variam em tamanho, capacidade de purificação e recursos adicionais. O Compact é ideal para espaços pequenos, enquanto o Max oferece máxima cobertura para ambientes maiores.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Os purificadores consomem muita energia?
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="faq-answer">
+          Não, nossos purificadores são projetados para eficiência energética, consumindo menos energia que uma lâmpada LED típica, garantindo economia e sustentabilidade.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Como limpar e manter o purificador?
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="faq-answer">
+          Limpe o exterior com um pano úmido e substitua os filtros conforme recomendado no manual. Recomendamos limpeza mensal e troca de filtros a cada 6-12 meses, dependendo do uso.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Existe garantia nos produtos?
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="faq-answer">
+          Sim, oferecemos garantia de 2 anos contra defeitos de fabricação. Para mais detalhes, consulte nossa política de garantia ou entre em contato com nosso suporte.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>AirPure</h3>
+        <p>Purificadores de ar modernos e sofisticados para um ambiente mais saudável e confortável.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Links Úteis</h3>
+        <a href="#home">Home</a>
+        <a href="#products">Produtos</a>
+        <a href="#technology">Tecnologia</a>
+        <a href="#benefits">Sobre Nós</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Suporte</h3>
+        <a href="#">Central de Ajuda</a>
+        <a href="#">Garantia</a>
+        <a href="#">Manutenção</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <a href="mailto:contato@airpure.com">contato@airpure.com</a>
+        <a href="tel:+5511999999999">(11) 99999-9999</a>
+        <a href="#">Redes Sociais</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 AirPure. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/hero-slider.js"></script>
+</body>
+</html>

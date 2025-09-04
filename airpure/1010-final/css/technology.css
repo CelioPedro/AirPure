@@ -1,0 +1,94 @@
+/* Technology Section */
+.technology {
+  padding: 8rem 3rem;
+  background: #ffffff;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tech-card {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  text-align: left;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+  transform: translateY(30px);
+  border: none;
+  cursor: pointer;
+}
+
+.tech-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+}
+
+.tech-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #e0e0e0, #f9f9f9);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.tech-title {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #2c2c2c;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* Add similar icon style for benefits section */
+.benefit-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #e0e0e0, #f9f9f9);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  color: #2c2c2c;
+  transition: all 0.3s ease;
+}
+
+.tech-description {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover .tech-icon {
+  transform: scale(1.1);
+}
+
+.tech-card:hover .tech-title {
+  transform: translateY(-2px);
+}
+
+.tech-card:hover .tech-description {
+  color: #555;
+}
